@@ -6,7 +6,9 @@ COPY package*.json ./
 
 RUN  npm ci --silence
 
-COPY . . 
+COPY . .
+
+RUN tsc
 
 CMD ["npm", "start"]
 
