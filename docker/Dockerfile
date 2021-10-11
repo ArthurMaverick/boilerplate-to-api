@@ -2,11 +2,11 @@ FROM node:16.8-slim
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY ../package*.json ./
 
 RUN  npm ci --silence
 
-COPY . .
+COPY .. .
 
 RUN tsc
 

@@ -1,5 +1,5 @@
 import { RequiredFieldError } from '../errors/validation'
-import { Validator } from './validator'
+import { Validator } from './rules/validator'
 
 export class Required implements Validator {
   constructor (
@@ -43,3 +43,4 @@ export class RequiredBuffer extends Required {
     }
   }
 }
+

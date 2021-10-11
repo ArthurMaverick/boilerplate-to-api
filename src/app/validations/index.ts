@@ -1,2 +1,2 @@
 export * from './required';
-export * from './validator';
+export * from './rules/validator';
